@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Proyecto Integrador Landing Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--LINK CSS-->
+        <link rel="stylesheet" href="./assets/styles.css">
+        <link rel="stylesheet" href="./assets/mediaqueries.css">
+        <!--LINK JS-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--me guie con la siguente pagina para los mensajes de alerta de sweetalert https://sweetalert2.github.io/-->
+        <script src="./src/index.js" type="module" ></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo-container">
+                    <img src="./assets/logo/logo.png" alt="logo donut" class="logo"/>
+                    <span class="logo-text">HEALTHY DONUTS</span>
+                </div>
+                <div class="navbar-right">
+                    <!--MENU-->
+                    <button class="btn-menu btn-toggle" id="menu-handler">
+                        <img src="./assets/icons/togglemenu-icon/togglemenu-icon-transparent.png" class="btn-menu" alt="toggle-menu">
+                    </button>
+                    <div class="nav-menu">
+                        <!--NAVBAR-LINKS-->
+                        <ul class="navbar-list">
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#About">About Us</a></li>
+                            <li><a href="#Products">Products</a></li>
+                            <li><a href="#Contact Us">Contact Us</a></li>
+                        </ul>
+                    <!--FORMULARIOS-->
+                        <div class="forms">
+                            <a href="login.html" class="btn-login">LOGIN</a>
+                            <a href="register.html" class="btn-signup">SIGN UP</a>
+                        </div>
+                    </div>
+                    <!--CART-->
+                    <button class="btn-cart menu-toggle">
+                        <img src="./assets/icons/cart-icon/cart-icon-transparent.png" alt="cart-icon" class="btn-menu">
+                        <span class="span-cart" id="cart-account">0</span>
+                    </button>
+                    <!--Inside Cart-->
+                    <div class="cart-container">
+                        <h2>YOUR CART</h2>
+                        <div class="item-list">
+                        </div>
+                        <div class="cart-summary">
+                            <h3>Total:</h3>
+                            <span class="total-price">$25,50</span>
+                        </div>
+                        <button class="btn-buy">BUY</button>
+                    </div>
+                    
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--section hero-->
+            <section class="hero" id="Home">
+                <div class="hero-text">
+                    <h1>SABORES REALES, SIN TACC, SIN VUELTAS</h1>
+                    <p>¿Soñaste alguna vez con comer donas, y no preocuparte por el gluten? ¡En Healthy Donuts lo logramos! Donas artesanles, con ingredientes de primera cuidadosamente seleccionados, y sobre todo libres de TACC!</p>
+                </div>
+                <div class="hero-img">
+                    <img src="./assets/background-image/background-image-donas.png" alt="hero image" class="hero-img">
+                </div>
+            </section>
+            <!--section about us-->
+            <section class="about" id="About">
+                <div class="about-text">
+                    <h1>ABOUT US</h1>
+                    <p>Somos una empresa dedicada a la elaboración de donas saludables, comprometida con ofrecer productos deliciosos y nutritivos para nuestros clientes. Nuestra misión es proporcionar opciones de postres que sean tanto sabrosas como beneficiosas para la salud, utilizando ingredientes naturales y de alta calidad. En Healthy Donuts, creemos que disfrutar de un dulce no debería comprometer tu bienestar, por eso nos esforzamos por crear donas que sean libres de gluten, bajas en azúcar y ricas en nutrientes. Nuestro compromiso es brindar a nuestros clientes una experiencia culinaria única.</p>
+                </div>
+            </section>
+            <!--section products-->
+            <section class="product" id="Products">
+                <div class="product-title">
+                    <h2>PRODUCTS</h2>
+                </div>
+                <!--Filters-->
+                <div class="filters">
+                    <h3>Filtros:</h3>
+                    <button class="filter-category" id="todas" >Todos las donas</button>
+                    <button class="filter-category" id="crema" >Con Crema</button>
+                    <button class="filter-category" id="chocolate" >Chocolate</button>
+                    <button class="filter-category" id="alcohol" >Con Alcohol</button>
+                    <button class="filter-category" id="frutal" >Frutales</button>
+                    <button class="filter-category" id="tradicional" >Tradicionales</button>
+                </div>
+                <!--Product-Container-->
+                <div class="product-container">
+                    
+                </div>
+            </section>
+            <!--section contact us-->
+            <section class="contact" id="Contact Us">
+                <div class="form">
+                    <h1>CONTACT US</h1>
+                    
+                    <div class="form-container">
+                        <div class="form-messages">
+                            <form id="form-for-messages">
+                                <h4>ENVIANOS UN MENSAJE!</h4>
+                                <div class="form-row">
+                                    <div class="input-email">
+                                        <input placeholder="Email" type="email" id="email-msg">
+                                        <label for="email"></label>
+                                    </div>
+                                    <div class="input-name">
+                                        <input placeholder="Nombre" type="text" id="name-msg">
+                                        <label for="name"></label>
+                                    </div>
+                                </div>
+                                <div class="input-messages">
+                                    <textarea type="text" id="text-msg" placeholder="Asunto"></textarea>
+                                    
+                                </div>
+                                <input type="submit" value="Enviar" class="submit-messages">
+                            </form>
+                        </div>
+                            <div class="form-suscribe">
+                                <form id="form-for-suscribe">
+                                    <h4>SUSCRÍBETE</h4>
+                                    <p>Sucríbete a nuestra página y no te pierdas ninguna novedad: nuevas recetas, sabores únicos, y ofertas exclusivas!</p>
+                                    <div class="input-box">
+                                        <input type="email" placeholder="Email" id="email-sub">
+                                        <label for="email"></label>
+                                    </div>
+                                    <input type="submit" class="submit-suscribe" value="Enviar">
+                                </form>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer-container">
+                    <img src="./assets/logo/logo.png" alt="footer-logo" class="footer-logo">
+                    <span>HEALTHY DONUTS</span>
+                </div>
+                <div class="social-logos">
+                    <div class="instagram">
+                        <img src="./assets/social-logo/instagram-logo.png" alt="logo-instagram" class="footer-logo">
+                    </div>
+                    <div class="Youtube">
+                        <img src="./assets/social-logo/youtube-logo.png" alt="logo-Youtube" class="footer-logo">
+                    </div>
+                    <div class="Facebook">
+                        <img src="./assets/social-logo/facebook-logo.png" alt="logo-Facebook" class="footer-logo">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

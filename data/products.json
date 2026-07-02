@@ -1,0 +1,100 @@
+[
+    {
+        "productImg": "./assets/cards-image/card-img-berry-donut.png",
+        "name": "BERRIES",
+        "desc": "Donut esponjosa con una cubierta cremosa de berries",
+        "price": 7.50,
+        "category":"crema"
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-chocolate-espresso-donut.png",
+        "name": "CHOCO-ESPRESSO",
+        "desc": "Donut bañada con chocolate blanco y coronada con un copo de crema chantilly",
+        "price": 6.25,
+        "category":"chocolate"
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-vanilla-donut.png",
+        "name": "VANILLA",
+        "desc": "Donut tradicional, con glaseado de vainilla y chispas de chocolate multicolor",
+        "price": 2.99,
+        "category":"tradicional"
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-honey-donut.png",
+        "name": "HONEY",
+        "desc": "Donut tradicional, bañada en un fino glaseado de miel",
+        "price": 1.99,
+        "category":"tradicional"
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-mojito-donut.png",
+        "name": "MOJITO",
+        "desc": "Donut esponjosa, con sabor a suave a ron y un glaseado de lima y menta",
+        "price": 6.25,
+        "category":"alcohol"
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-pina-donut.png",
+        "name": "PIÑA",
+        "desc": "Donut esponjosa con un glaseado fino de maracuya, y con trozos de piña caramelizada",
+        "price": 4.99,
+        "category":"frutal"
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-tropical-donut.png",
+        "name": "TROPICAL",
+        "desc": "Donut bañada en un fino glaseado de pitaya, y con toppings de petalos secos",
+        "price": 6.50,
+        "category":"frutal"
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-margarita-donut.png",
+        "name": "MARGARITA",
+        "desc": "Donut esponjosa, con sabor suave a tequila y con notas cítricas de naranja. Rellena con crema sabor limon.",
+        "price": 2.99,
+        "category": ["alcohol", "crema"]
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-chococrema-donut.png",
+        "name": "CHOCO-CREMA",
+        "desc": "Donut tradicional bañada con chocolate negro amargo y con relleno de crema pastelera.",
+        "price": 10.25,
+        "category": ["chocolate", "crema"]
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-lemon-donut.png",
+        "name": "LEMON-RICOTTA",
+        "desc": "Donut esponjosa sabor a limon, con una cubierta de crema de ricotta.",
+        "price": 10.25,
+        "category": ["frutal", "crema"]
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-apple-donut.png",
+        "name": "APPLE",
+        "desc": "Buñuelo de manzana, con un glaseado fino de miel.",
+        "price": 5.99,
+        "category":"frutal"
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-cherry-donut.png",
+        "name": "CHERRY",
+        "desc": "Donut tradicional sabor cherry.",
+        "price": 6.25,
+        "category":"frutal"
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-peach-donut.png",
+        "name": "PEACH",
+        "desc": "Donut esponjosa, cubierta con crema sabor durazno y pequeños pedacitos caramelizados. Rellena con crema.",
+        "price": 5.99,
+        "category":"frutal"
+    },
+    {
+        "productImg": "./assets/cards-image/card-img-chocolate.png",
+        "name": "CHOCOLATE",
+        "desc": "Donut tradicional cubierta con chocolate amargo.",
+        "price": 1.99,
+        "category": ["chocolate", "tradicional"]
+    }
+]
